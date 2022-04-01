@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg"
+import "./App.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCoffee, faSun } from "@fortawesome/free-solid-svg-icons"
 function App() {
   return (
     <div className="App">
@@ -8,6 +9,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          <FontAwesomeIcon icon={faCoffee} />
+          <FontAwesomeIcon icon={faSun} />
         </p>
         <a
           className="App-link"
@@ -19,7 +22,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
