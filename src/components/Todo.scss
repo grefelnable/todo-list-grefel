@@ -1,0 +1,68 @@
+@import "../variables";
+
+.todo__item {
+  list-style: none;
+  padding: 1em;
+  background-color: $grey-800;
+  border-bottom: 1.5px solid $grey-700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+
+  &__btn-circle {
+    font-size: 1.25rem;
+    background: white;
+    border-radius: 50%;
+    color: $clr-500;
+    cursor: pointer;
+    border: none;
+    display: grid;
+    place-items: center;
+
+    .icon-circle {
+      position: relative;
+      color: $grey-800;
+      border: 1px solid $grey-700;
+      border-radius: 50%;
+      opacity: 1;
+    }
+    .icon-check {
+      color: $clr-500;
+      position: absolute;
+    }
+  }
+  &__text {
+    flex: 1;
+  }
+
+  &__btn-trash {
+    color: lighten($red-dark, 20%);
+    cursor: pointer;
+    transition: $transition;
+    background: none;
+    border: none;
+    opacity: 0;
+  }
+
+  //hover on item
+  &:hover {
+    .todo__item__btn-trash {
+      opacity: 1;
+    }
+  }
+}
+//todo complete
+.todo__complete {
+  .todo__item__circle-check {
+    color: $clr-600;
+    background: white;
+  }
+  .todo__item__text {
+    color: $grey-600;
+    text-decoration: line-through;
+  }
+  .icon-circle {
+    opacity: 0;
+  }
+}

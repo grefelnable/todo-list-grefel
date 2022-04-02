@@ -1,26 +1,13 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCircleCheck, faCircle } from "@fortawesome/free-solid-svg-icons"
 import "./TodoList.scss"
+import Todo from "./Todo"
 
 const Todolist = () => {
   return (
     <div className="todo-list-container">
       <ul className="todo__list">
-        <li className="todo__item todo__complete">
-          <FontAwesomeIcon
-            icon={faCircleCheck}
-            className="todo__item__circle-check"
-          />
-          Complete React course
-        </li>
-        <li className="todo__item">
-          <FontAwesomeIcon
-            icon={faCircle}
-            className="todo__item__circle-check"
-          />
-          Workout
-        </li>
+        <Todo />
+        <Todo />
       </ul>
       {/* end of todo list */}
       {/* todo footer */}
