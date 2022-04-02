@@ -1,0 +1,17 @@
+@import "../variables";
+
+.textInput {
+  padding: 1em 0.5em;
+  font-size: 1rem;
+  width: 100%;
+  outline-color: $clr-500;
+  border: none;
+  color: white;
+  background-color: $grey-800;
+  box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 1.5em;
+
+  &::placeholder {
+    color: $grey-500;
+  }
+}
